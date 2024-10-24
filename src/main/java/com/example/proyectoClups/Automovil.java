@@ -38,6 +38,7 @@ public class Automovil implements Serializable {
     public LocalDate getFechaAlta(){return fechaAlta;}
     public LocalDate getFechaActualizacion(){return fechaActualizacion;}
     public boolean getActivo(){return activo;}
+    public Cliente getCliente(){return cliente;}
 
     //setter
     public void setColor(String color) {

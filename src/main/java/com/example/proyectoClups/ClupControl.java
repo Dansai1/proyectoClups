@@ -15,7 +15,7 @@ public class ClupControl {
     }
 
     @GetMapping("/chips-activos")
-    public List<Automovil> getChipsActivos(@RequestParam Integer clubId){
-        return automovilServis.getChipsActivosClup(clubId);
+    public List<Integer> getChipsActivos(@RequestParam Integer clubId){
+        return automovilServis.getActiveChipsByclub(clubId);
     }
 }

@@ -35,6 +35,7 @@ public class Cliente implements Serializable {
     public LocalDate getFechaDeActuali(){return fechaDeActuali;}
     public Boolean getActivo(){return activo;}
     public Boolean getAccesoPermitido(){return accesoPermitido;}
+    public Clup getClup(){return clup;}
 
     //setter
 
