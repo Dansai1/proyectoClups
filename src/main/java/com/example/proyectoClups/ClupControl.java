@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+//encargado de pedir los chips activos
 @RestController
 public class ClupControl {
     private final AutomovilServis automovilServis;

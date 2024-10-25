@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*encargado de controlar los diferentes servicios relacionados con los automoviles
+* en este caso de varificar si estan activos */
 @Service
 public class AutomovilServis {
     @Autowired

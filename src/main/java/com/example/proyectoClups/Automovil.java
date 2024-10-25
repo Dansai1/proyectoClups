@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 //POJO autos
+// tabla para autos
 @Entity
 public class Automovil implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -22,6 +23,7 @@ public class Automovil implements Serializable {
     private LocalDate fechaActualizacion;
     private boolean activo;
 
+    //relacion muchos a uno
     @ManyToOne
     @JoinColumn(name= "id_cliente")
     private Cliente cliente;

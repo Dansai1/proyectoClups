@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 //POJO cliente
+//tabla para clientes
 @Entity
 public class Cliente implements Serializable {
 
@@ -24,6 +25,7 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "cliente")
     private List<Automovil> automovilList;
 
+    //relacion Muchos a uno
     @ManyToOne
     @JoinColumn(name= "id_clup")
     private Clup clup;

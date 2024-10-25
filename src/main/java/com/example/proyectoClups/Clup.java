@@ -15,6 +15,7 @@ public class Clup implements Serializable {
     private int id;
     private String nombre;
 
+    //relacion uno a muchos
     @OneToMany(mappedBy = "clup")
     private List<Cliente> clientes;
 
